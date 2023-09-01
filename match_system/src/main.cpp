@@ -53,7 +53,7 @@ class Pool {
 			}
 		}
 		void save_result(int a, int b) {
-			printf("Match Result: %d %d", a, b);
+			printf("Match Result: %d %d\n", a, b);
 		}
 		void match() {
 			while (users.size() > 1) {
@@ -64,7 +64,7 @@ class Pool {
 				save_result(a.id, b.id);
 			}
 		}
-};
+} pool;
 
 
 
