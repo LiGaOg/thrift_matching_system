@@ -11,7 +11,7 @@ from thrift.protocol import TBinaryProtocol
 
 def operate(op, user_id, username, score):
     # Make socket
-    transport = TSocket.TSocket('localhost', 9090)
+    transport = TSocket.TSocket('127.0.0.1', 9090)
 
     # Buffering is critical. Raw sockets are very slow
     transport = TTransport.TBufferedTransport(transport)
